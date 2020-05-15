@@ -24,7 +24,7 @@ import os
 import json
 import re
 import urllib.request
-import pprint
+import pdb
 
 from tornado import gen, concurrent
 
@@ -82,9 +82,7 @@ class WrapSpawner(Spawner):
             # initial state will always be wrong since it will see *our* state
             self.child_spawner.clear_state()
             print("Before checking state 123")
-            xppx<-self.child_state.items()
-            print(xppx)
-            print("I printed it!")
+            pdb.set_trace()
             if self.child_state:
                 print("I dont have a state loding one...")
                 self.child_spawner.load_state(self.child_state)
