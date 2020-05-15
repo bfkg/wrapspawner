@@ -83,6 +83,7 @@ class WrapSpawner(Spawner):
             self.child_spawner.clear_state()
             print("Before checking state 123")
             pprint(self.child_state)
+            print("I printed it!")
             if self.child_state:
                 print("I dont have a state loding one...")
                 self.child_spawner.load_state(self.child_state)
