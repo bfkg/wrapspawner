@@ -81,7 +81,7 @@ class WrapSpawner(Spawner):
                 )
             # initial state will always be wrong since it will see *our* state
             self.child_spawner.clear_state()
-            print("Before checking state")
+            print("Before checking state 123")
             pprint(self.child_state)
             if self.child_state:
                 print("I dont have a state loding one...")
