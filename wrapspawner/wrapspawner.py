@@ -76,6 +76,7 @@ class WrapSpawner(Spawner):
                 oauth_client_id = self.oauth_client_id,
                 server = self._server,
                 config = self.config,
+                print("Here I should print child_config!")
                 print(self.config)
                 **self.child_config
                 )
