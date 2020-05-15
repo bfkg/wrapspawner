@@ -77,7 +77,7 @@ class WrapSpawner(Spawner):
                 server = self._server,
                 config = self.config,
                 print("Here I should print child_config!")
-                print(self.config)
+                print self.config
                 **self.child_config
                 )
             # initial state will always be wrong since it will see *our* state
